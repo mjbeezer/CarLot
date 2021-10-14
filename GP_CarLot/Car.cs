@@ -24,7 +24,16 @@ namespace GP_CarLot
         //blank constructor
         public Car()
         {
-            
+            this.Make = "";
+            this.Model = "";
+            this.Year = 0;
+            this.Price = 0;
+
+        }
+
+        public override string ToString()
+        {
+            return $"Make: {Make} Model: {Model} Year: {Year} Price: {Price}";
         }
     }
 }
