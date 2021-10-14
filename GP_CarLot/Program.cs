@@ -8,10 +8,10 @@ namespace GP_CarLot
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to The Dream Team Car Lot!");
-
-            List<Car> carLot = new List<Car>();
+            CarLot newLot = new CarLot();
+            
             //display available cars
-            CarLot.DisplayCars(carLot);
+            newLot.DisplayCars();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace GP_CarLot
         }
 
 
-        public static string CheckInput()
+        public string CheckInput()
         {
 
             string result = "";
@@ -62,7 +62,7 @@ namespace GP_CarLot
 
         }
 
-        public static void AddToList(List<Car> carLot)
+        public void AddToList(List<Car> carLot)
         {
             string make = "";
             string model = "";
@@ -183,12 +183,13 @@ namespace GP_CarLot
         }
 
         //display cars
-        public static void DisplayCars(List<Car> ShowRoom)
-        {
-            foreach(Car i in ShowRoom)
+        public void DisplayCars()
+        {   foreach(Car c in carLot)
             {
-                Console.WriteLine($" {i.ToString()}");
+                Console.WriteLine(c.ToString());
             }
+            
+          
         }
     }
 }
