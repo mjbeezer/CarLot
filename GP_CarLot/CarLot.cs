@@ -180,8 +180,15 @@ namespace GP_CarLot
                 carLot.Add(usedCar);
 
             }
+        }
 
-
+        //display cars
+        public static void DisplayCars(List<Car> ShowRoom)
+        {
+            foreach(Car i in ShowRoom)
+            {
+                Console.WriteLine($" {i.ToString()}");
+            }
         }
     }
 }
