@@ -26,5 +26,10 @@ namespace GP_CarLot
             this.IsTrue = true;
         }
 
+        public override string ToString()
+        {
+            return base.ToString() + $" New : {IsTrue}";
+        }
+
     }
 }
